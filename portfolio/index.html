@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="">
+            <h1>Muhammad<br>Umer Khan</h1>
+            <h3>Front-end Developer in Training</h3>
+        </div>
+        <img src="./assets/hero-img.jpg" alt="hero img">
+    </section>
+
+    <section class="about" id="about">
+        <img src="./assets/aboutme-img.jpg" alt="about me vector img">
+        <div class="aboutMe">
+            <h1>About Me</h1>
+            <p>I am a BsCS Final Year student of Ilma university with a passion for coding and developing. I want to learn skills and be valuable in the industry of Computer science.</p>
+        </div>
+
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="myprojects">
+            <h1>Pieces of My Work</h1>
+            <div class="proj1">
+                <img src="./assets/quickloan-ss.jpg" alt="">
+                <div class="">
+                    <h4>QuickLoan</h4>
+                    <span>Description:</span>
+                    <p>A website that "Offers" loans and calculates payment time, rate and months.</p>
+                    <span>link: <a href="https://quickloan-pearl.vercel.app">https://quickloan-pearl.vercel.app</a></span>
+                    
+                    <span>Status:<span class="status">Complete</span></span>
+                </div>
+            </div>  
+            <div class="proj2">
+                <img src="./assets/rebel-health-ss.jpg" alt="">
+                <div class="">
+                    <h4>Rebel Health Allience</h4>
+                    <span>Description</span>
+
+                    <p>Replicated a static webpage and added animations</p>
+                    <span>link: <a href="https://rebel-health-allience.vercel.app">https://rebel-health-allience.vercel.app</a></span>
+                    
+                    <span>Status: <span class="status">Complete</span></span>
+                    
+                </div>
+            </div>  
+            <div class="proj3">
+                <img src="./assets/mad-ss.jpg" alt="">
+                <div class="">
+                    <h4>Mad Hospitality</h4>
+                    <span>Description</span>
+                    <p>Replicated multipage static website and added animations</p>
+                    <span>link: <a href="https://mad-hospitality.vercel.app">https://mad-hospitality.vercel.app</a></span>
+                    <span>Status: <span class="status">Work in Progress</span></span>
+                </div>
+            </div>
+            <div class="proj4">
+                <img src="./assets/phnes-travel-ss.jpg" alt="">
+                <div class="">
+                <h4>Phnes-Travel</h4>
+                <span>Description</span>
+                <p>Replicated multipage static website about Travel Agency and added animations</p>
+                <span>link:</span>
+                <a href="https://phnes-travel-phi.vercel.app">https://phnes-travel-phi.vercel.app</a>
+                <span>Status: <span class="status">Work in Progress</span></span>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Contact" id="contact">
+        <h1>Send A message</h1>
+        <div class="">
+            <div class="contactme">
+                <form action="">
+                    <input type="text" placeholder="Name" class="name">
+                    <input type="email" placeholder="Email" class="Email">
+                    <textarea name="message" class="message" placeholder="Your Message"></textarea>
+                    <button">Send</button>
+                </form>
+            </div>
+            <span>OR</span>
+            <hr>
+            <div class="connect">
+                <span>Connect On</span>
+                <ul class="">
+                    <li></i><a href=""><i class="fa-brands fa-square-facebook"></i>Facebook</a></li>
+                    <li><a href=""><i class="fa-brands fa-square-linkedin"></i>linkedIn</a></li>
+                    <li><a href=""><i class="fa-brands fa-square-instagram"></i>Instagram</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span>&copy; 2026 Muhammad Umer Khan</span>
+    </footer>
+
+    <script>
+        const statuses = document.querySelectorAll(".status")
+        statuses.forEach((status)=>{
+        
+        if(status.innerHTML == "Complete"){
+            status.style.color = "SeaGreen"
+        }
+        })
+    </script>
+</body>
+</html>

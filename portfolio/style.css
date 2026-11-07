@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem ;
+}
+nav .nav-bar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+
+}
+.nav-bar ul a{
+    text-decoration: none;
+    color: #3b3b99;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+    margin: 3rem 0rem;
+}
+.hero div h1{
+    color: white;
+    background-color: #3b3b99;
+    width: min-content;
+    padding: 1.5rem;
+    padding-left: 5rem;
+    padding-right: 6rem;
+    border-radius: 0rem 10rem 1rem 0rem;
+    margin: 0.5rem 0rem;
+    font-size: 4rem;
+    
+    
+}
+.hero div h3{
+    width: max-content;
+    padding: 1rem;
+    padding-left: 5rem;
+    padding-right: 3rem;
+    background-color: #f4a45e;
+    border-radius: 0rem 1rem 10rem 0rem;
+}
+.hero img{
+    height: 25rem;
+    margin: 0rem 2rem;
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0rem;
+}
+.about .aboutMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end ;
+    gap: 0.5rem;
+}
+.about img{
+    width: 40%;
+}
+
+.about .aboutMe h1{
+    background-color: #f4a45e;
+    border-radius: 1rem 0rem 0rem 10rem;
+    width: max-content;
+    padding: 0.5rem;
+    padding-right: 5rem;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+
+}
+.about .aboutMe p{
+    color: white;
+    background-color: #3b3b99;
+    border-radius: 10rem 0rem 0rem 1rem;
+    padding: 1rem;
+    padding-right: 5rem;
+    padding-left: 4rem;
+    font-size:1.1rem;
+    width: 90%;
+}
+
+.projects .myprojects{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.projects .myprojects h1{
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5rem;
+    background-color: #3b3b99;
+    padding-left: 5rem;
+    padding-right: 2rem;
+    border-radius: 0rem 10rem 1rem 0rem;
+    width: max-content;
+}
+
+.myprojects>div{
+    display: flex;
+    /* align-items: center; */
+    gap: 3rem;
+
+}
+.myprojects>div>img{
+    width: 15rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.myprojects .proj1,
+.myprojects .proj3{
+    padding: 2rem;
+    padding-left: 5rem;
+    padding-right: 3rem;
+    background-color: #f4a45e;
+    border-radius: 0rem 0.5rem 15rem 0rem;
+    width: max-content;
+    margin: 1rem 0rem;
+}
+.myprojects .proj1 span,
+.myprojects .proj3 span{
+    color: #343434;
+}
+.myprojects .proj2,
+.myprojects .proj4{
+    color: white;
+    background-color: #3b3b99;
+    border-radius: 10rem 0rem 0rem 0.5rem;
+    padding: 1rem;
+    padding-right: 5rem;
+    padding-left: 8rem;
+    flex-direction: row-reverse;
+    align-self: flex-end;
+}
+.myprojects .proj1 a,
+.myprojects .proj3 a{
+    color: #3b3b99;
+}
+.myprojects .proj2 a,
+.myprojects .proj4 a{
+    color: #f4a45e;
+}
+.myprojects .proj2 span,
+.myprojects .proj4 span{
+    color: rgb(181, 181, 181);
+}
+.myprojects > div > div{
+    display: flex;
+    flex-direction: column;
+}
+.myprojects > div > div >h4{
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+}
+
+
+.Contact{
+    margin: 4rem 0rem;
+}
+.Contact h1{
+    width: max-content;
+    padding: 0.5rem;
+    padding-left: 5rem;
+    padding-right: 3rem;
+    background-color: #f4a45e;
+    border-radius: 0rem 1rem 10rem 0rem;
+    font-size: 1.5rem ;
+}
+
+.Contact > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.contactme form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    margin: 2rem 0rem;
+    padding: 2rem;
+    background-color: #3b3b99;
+    width: 25rem;
+    border-radius: 1rem;
+}
+
+.contactme form input{
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    color: #3b3b99;
+    padding-left: 1.5rem;
+    height: 3rem;
+}
+.contactme form textarea{
+    border: none;
+    padding: 1rem;
+    resize: none;
+    border-radius: 1rem;
+    height: 3rem;
+    padding-left: 1.5rem;
+    color: #3b3b99;
+}
+.contactme form button{
+    color: #3b3b99;
+    height: 3rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem ;
+    width: 50%;
+}
+.Contact >div >hr{
+    border: 1px solid rgb(95, 95, 95);
+    height: 20rem;
+}
+.Contact >div >span{
+    font-size: 2rem;
+    position: absolute;
+    /* transform: translatex(6rem); */
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border: none;
+    border-radius: 5rem;
+
+}
+
+.connect{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #3b3b99;
+    padding: 2rem;
+    color: white;
+    width: 25rem;
+    height: 18rem;
+    border: none;
+    border-radius: 1rem;
+}
+.connect span{
+    font-size: 1.5rem;
+}
+.connect ul li{
+    /* padding-left: 5rem; */
+    margin:1rem ;
+    font-size:1.5rem ;
+    list-style: none;
+    
+}
+.connect a {
+    text-decoration: none;
+    color: white;
+    
+}
+.connect a i{
+    margin: 0rem 1rem;
+}
+
+footer{
+    background-color: #3b3b99;
+    color: white;
+    padding: 1rem;
+}
