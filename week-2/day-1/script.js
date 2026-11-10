@@ -73,7 +73,6 @@ function task8(){
         console.log("8. SLive, serve and enjoy")
     
     },500)
-
 }
 
 
