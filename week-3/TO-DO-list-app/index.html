@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>To-Do app</title>
+  </head>
+  <body>
+    <h1>TO-DO list</h1>
+    <p id="day-display"></p>
+
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Tasks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="create-new" onclick="att_onClick_btns();">
+          <td>
+            <button><i class="fa-solid fa-plus"></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button class="create-new-btn" onclick="att_onClick_btns();">
+      <i class="fa-solid fa-plus"></i>
+    </button>
+    <div class="new-task">
+      <input id="new_task_input" type="text" placeholder="Create New Task" />
+      <button class="new-task-submit" type="submit" onclick="submit_task()">
+        <i class="fa-solid fa-check"></i>
+      </button>
+      <button class="close-new-task">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <span class="input-error empty-error">this can't be empty</span>
+    </div>
+
+    <div class="edit-task">
+      <input
+        class="edit_task_input"
+        name="edit-"
+        type="text"
+        placeholder="Edit Task"
+      />
+      <button class="edit-task-submit" type="submit">
+        <i class="fa-solid fa-check"></i>
+      </button>
+      <button class="close-edit-task">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <span class="input-error empty-error">this can't be empty</span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
